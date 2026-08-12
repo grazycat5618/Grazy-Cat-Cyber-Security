@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grazy Cat — Cyber Security</title>
+    <title>Grazy Cat Cyber Security</title>
     <link rel="icon" type="image/png" href="Logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
@@ -209,10 +209,11 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 700;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.3px;
             color: #fff;
+            white-space: nowrap;
         }
         .nav-logo img {
             height: 42px;
@@ -834,10 +835,11 @@
         .footer-brand span {
             font-weight: 600;
             font-size: 0.95rem;
+            color: #fff;
         }
-        .footer-brand small {
-            color: var(--text-muted);
+        .footer-brand span small {
             font-weight: 400;
+            color: var(--text-muted);
             font-size: 0.8rem;
         }
         .footer p {
@@ -1044,6 +1046,18 @@
             .pricing-img-wrap {
                 border-radius: var(--radius-sm);
             }
+            .nav-logo {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo span {
+                display: none;
+            }
+            .nav-logo {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -1056,7 +1070,7 @@
         <div class="nav-inner">
             <a href="#" class="nav-logo" aria-label="Grazy Cat Home">
                 <img src="Logo.png" alt="Grazy Cat Logo" />
-                Grazy<span>Cat</span>
+                Grazy Cat <span>Cyber Security</span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" data-section="home">Home</a></li>
@@ -1286,8 +1300,8 @@
                     <div class="contact-detail">
                         <div class="icon"><i class="fas fa-globe"></i></div>
                         <div>
-                            <div class="label">Portfolio</div>
-                            <div class="value"><a href="https://grazycat5618.github.io/Portfolio/" target="_blank">grazycat5618.github.io/Portfolio</a></div>
+                            <div class="label">Website</div>
+                            <div class="value"><a href="https://grazycat5618.github.io/Grazy-Cat-Cyber-Security/" target="_blank">grazycat5618.github.io/Grazy-Cat-Cyber-Security</a></div>
                         </div>
                     </div>
 
@@ -1342,7 +1356,7 @@
             <div class="footer-inner">
                 <div class="footer-brand">
                     <img src="Logo.png" alt="Grazy Cat" />
-                    <span>Grazy Cat <small>Cyber Security</small></span>
+                    <span>Grazy Cat Cyber Security</span>
                 </div>
                 <p>&copy; 2026 Selo David Selo “Go deep before you go dangerous.”</p>
                 <div class="foot-links">
